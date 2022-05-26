@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Projeto_Ricardo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <center>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Names="Arial" style="text-align: center" EnableTheming="True" NavigateUrl="home.aspx">Home</asp:HyperLink>  &nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Names="Arial" style="text-align: center" NavigateUrl="sobre.aspx">| Sobre</asp:HyperLink>
+            &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Names="Arial" style="text-align: center" NavigateUrl="cadastrarAlunos.aspx">| Cadastrar Alunos</asp:HyperLink>
+       </center>
+
+          <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
